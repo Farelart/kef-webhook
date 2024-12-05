@@ -2,7 +2,7 @@ from fastapi import FastAPI, Request
 
 app = FastAPI()
 
-@app.post("/webhook")
+@app.post("/")
 async def webhook(request: Request):
     # Step 1: Get data sent by FixPay
     payload = await request.json()
